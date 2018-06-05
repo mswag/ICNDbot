@@ -1,0 +1,28 @@
+{
+  "name": "initbot",
+  "version": "0.1.0",
+  "private": true,
+  "config": {
+    "telegramtoken": "",
+    "wittoken": ""
+  },
+  "scripts": {
+    "help": "npm-run-help",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "nodemon test.js",
+    "ptest": "nodemon ./providers/test.js",
+    "updatekeywords": "node ./updateKeywords.js",
+    "setwebhook": "node ./setHerokuWebhook.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0",
+    "node-wit": "^5.0.0",
+    "nodemon": "1.17.5",
+    "npm-run-help": "^1.1.0",
+    "request": "^2.87.0",
+    "telegram-test": "^0.1.5",
+    "telegram-test-api": "^1.0.2",
+    "wit-keywords": "^1.0.0"
+  }
+}
